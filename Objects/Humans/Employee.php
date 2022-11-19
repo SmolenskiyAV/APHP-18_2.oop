@@ -20,7 +20,7 @@ abstract class Employee {
 
     abstract public function getDepartmentName(): string;
 
-    public static function getCompanyName(): string // static-getter
+    public function getCompanyName(): string // static-getter
     {
         return self::COMPANY;
     }

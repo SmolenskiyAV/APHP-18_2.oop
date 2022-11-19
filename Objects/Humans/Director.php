@@ -20,17 +20,17 @@ class Director extends Employee implements \DepartmentNameInterface, \PostInterf
         return $this->department;
     }
 
-    public static function getPost(): string // static-getter
+    public function getPost(): string // getter
     {
         return self::POST;
     }
 
-    public static function getSpecialization(): string // static-getter
+    public function getSpecialization(): string // getter
     {
         return self::SPECIALIZATION;
     }
 
-    public static function getPayment(): int // static-getter
+    public function getPayment(): int // getter
     {
         return self::PAYMENT;
     }

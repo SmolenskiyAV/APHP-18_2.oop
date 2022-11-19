@@ -20,17 +20,17 @@ class Tester extends Employee implements \DepartmentNameInterface, \Specializati
         return $this->department;
     }
 
-    public static function getPost(): string // static-getter
+    public function getPost(): string // static-getter
     {
         return self::POST;
     }
 
-    public static function getSpecialization(): string // static-getter
+    public function getSpecialization(): string // static-getter
     {
         return self::SPECIALIZATION;
     }
 
-    public static function getPayment(): int // static-getter
+    public function getPayment(): int // static-getter
     {
         return self::PAYMENT;
     }

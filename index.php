@@ -23,11 +23,11 @@ foreach ( $employee as $person ) {
     if ($person instanceof Human\Employee) {
 
         echo 'Сотрудник: ' . ($person->name) . ' ' . ($person->surname). '. Возраст: ' . ($person->age) . ' лет.' . PHP_EOL;
-        echo 'Должность: ' . ($person::getPost()) . PHP_EOL;
-        echo 'Специальность: ' . ($person::getSpecialization()) . PHP_EOL;
-        echo 'Зарплата: ' . ($person::getPayment()). ' руб.' . PHP_EOL;
+        echo 'Должность: ' . ($person->getPost()) . PHP_EOL;
+        echo 'Специальность: ' . ($person->getSpecialization()) . PHP_EOL;
+        echo 'Зарплата: ' . ($person->getPayment()). ' руб.' . PHP_EOL;
         echo PHP_EOL;
-        $sumPayment +=  $person::getPayment();
+        $sumPayment +=  $person->getPayment();
     }
     $numberOfEmployeers++;
 }
